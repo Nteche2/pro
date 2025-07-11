@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="loago.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Cloud Engineer</p>
+                <h1>Hi, I'm <span>Nteche</span><br>Anthony from Ghana</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Anthony3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm a Cloud Engineer and Computer Science student at the University of Cape Coast, skilled in automating and scaling infrastructure with Terraform, Ansible, and Kubernetes. Passionate about containerization and CI/CD pipelines.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Cloud Engineer</span><br>Managing and maintaining infrastructure in the cloud</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Cloud Engineer at Company</li>
+                            <li><span>2020-2022</span><br>Team lead at StarApp LLC</li>
+                            <li><span>2023-Current</span><br>Team lead at Generation Ghana</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2025</span><br>Degree in computer Science at the University of cape Coast</li>
+                            <li><span>2023</span><br>Cloud Engineering Program at Generation Ghana</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I engage in web design and development projects</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I create user-friendly interfaces and experiences</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-cloud"></i>
+                    <h2>Cloud Engineering</h2>
+                    <p>I build and manage cloud infrastructure solutions</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----profolio-->
+    <div id="portfolio">
+        <div id="container">
+             <h1 class="sub-title">My work</h1>
+             <div class="work-list">
+                <div class="work">
+                    <img src="anthony2.jpg">
+                    <div class="layer">
+                        <h3>Social midia app</h3>
+                        <p>This app app connect you to the talented people around the world.<br>Download it now from play store</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images (3).jpg">
+                    <div class="layer">
+                        <h3>Social midia app</h3>
+                        <p>This app app connect you to the talented people around the world.<br>Download it now from play store</p>
+                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="images (1).jpg">
+                    <div class="layer">
+                        <h3>Social midia app</h3>
+                        <p>This app app connect you to the talented people around the world.<br>Download it now from play store</p>
+                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                    </div>
+
+
+                </div>
+
+             
+
+        </div> <!-----hh-->
+        <a href="#"class="btn">  see more</a>
+
+
+
+    </div>
+    </div>
+    <!----content-->
+   <!-- Contact section with fixed social icons -->
+    <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>ntechea@gmail.com</p>
+                <p>0558001375</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href=""class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows=6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>Copyright © Ntche. Anthony with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+</div>
+</div>
+<script>
+        function opentab(event, tabname) {
+            // Remove active class from all tab links
+            const tablinks = document.querySelectorAll(".tab-links");
+            tablinks.forEach(tablink => {
+                tablink.classList.remove("active-link");
+            });
+            
+            // Remove active class from all tab contents
+            const tabcontents = document.querySelectorAll(".tab-contents");
+            tabcontents.forEach(tabcontent => {
+                tabcontent.classList.remove("active-tab");
+            });
+            
+            // Add active class to clicked tab
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+ </script>
+ <script>
+    var sidemenu =document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right ="0"
+    }
+     function closemenu(){
+        sidemenu.style.right ="-200"
+
+    }
+ </script>
+</body>
+</html>
